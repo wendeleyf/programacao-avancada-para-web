@@ -9,6 +9,10 @@
 <title>Create an account</title>
 <link href="${contextPath}/resources/css/bootstrap.min.css"
 	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+	integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+	crossorigin="anonymous">
 </head>
 <body>
 	<div class="container">
@@ -46,6 +50,9 @@
 								<td>${product.id}</td>
 								<td>${product.name}</td>
 								<td>${product.description}</td>
+								<td><a href="/product/delete/${product.id}"> <i
+										class="fa fa-trash"></i>
+								</a></td>
 							</tr>
 						</c:forEach>
 					</tbody>

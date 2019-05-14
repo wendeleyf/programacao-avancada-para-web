@@ -21,10 +21,20 @@ public class ProductServiceImpl implements ProductService {
 	public Product findByName(String nome) {
 		return productRepository.findByName(nome);
 	}
-	
-	
+
+	public Product findById(int id) {
+		return productRepository.findById(id);
+	}
 	public List<Product> findAll(){
 		return productRepository.findAll();
+	}
+
+	public void update(Product produto) {
+		productRepository.save(produto);
+	}
+
+	public void delete(Product produto) {
+		productRepository.delete(produto);
 	}
 
 }

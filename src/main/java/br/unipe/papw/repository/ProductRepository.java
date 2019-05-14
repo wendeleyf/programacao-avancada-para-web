@@ -8,9 +8,8 @@ import br.unipe.papw.model.Product;
 @Repository
 public interface ProductRepository
       extends JpaRepository<Product, Long>{
-	
 	Product findByName(String nome);
-	
+	Product findById(int id);
 }
 
 
